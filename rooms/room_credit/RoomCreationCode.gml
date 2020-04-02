@@ -1,0 +1,2 @@
+var inst=instance_create_depth(100,100,0,text_typer);
+inst.text="{scale 2}{voice 0}{instant true}{color `yellow`}GameMaker开发者之家月度挑战&    单obj游戏 参与作品{color `white`}&&      By 糖萌芦(TML)&  DELTARUNE by Toby Fox"

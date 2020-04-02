@@ -1,0 +1,35 @@
+if(shake_x>0){
+	if(_shake_time_x>0){
+		_shake_time_x-=1;
+	}else{
+		if(!shake_random_x){
+			if(_shake_positive_x){
+				_shake_pos_x=shake_x;
+			}else{
+				shake_x-=shake_decrease_x;
+				_shake_pos_x=-shake_x;
+			}
+			_shake_positive_x=!_shake_positive_x;
+		}else{
+			_shake_pos_x=random_range(-shake_x,shake_x);
+			shake_x-=shake_decrease_x;
+		}
+		_shake_time_x=shake_speed_x;
+	}
+}else{
+	shake_speed_x=0;
+	shake_decrease_x=1;
+	shake_random_x=false;
+	_shake_time_x=0;
+	_shake_pos_x=0;
+	_shake_positive_x=true;
+}
+x=470+_shake_pos_x;
+
+if(global.lancer_shake){
+	if(power(global.status,2)>irandom(500)){
+		x=470+choose(1,-1);
+	}else{
+		x=470;
+	}
+}

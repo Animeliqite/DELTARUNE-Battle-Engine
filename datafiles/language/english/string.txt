@@ -1,0 +1,5 @@
+"dialog.susie.0"	"Test MSG A."
+"dialog.susie.1"	"Test MSG B."
+"dialog.susie.2"	"Test MSG BA.{pause}{clear}Test MSG BB."
+"dialog.susie.3"	"Test MSG C."
+"dialog.susie.4"	"Test MSG D."

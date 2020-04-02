@@ -1,0 +1,8 @@
+﻿"dialog.susie.0"	"你想知道叛徒们&是怎样的下场么？"
+"dialog.susie.1"	"碾，成，渣。"
+"dialog.susie.2"	"你要是再&敢挡道...{pause}{clear}...我会杀了你。"
+"dialog.susie.3"	"明白了么？&我会杀了你。"
+"dialog.susie.4"	"呵...&没打中，蠢货！"
+"dialog.susie.5"	"...等等，&你为什么&不还手...？"
+"dialog.susie.6"	"...你认为我会&手下留情吗？{pause}{clear}你要愿意等死&也行。{pause}{clear}这样我还&乐得轻松。"
+"dialog.susie.7"	"........&好了，&够了。{pause}{clear}你要是这么&想死...{pause}{clear}那就死吧！"
