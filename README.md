@@ -1,6 +1,6 @@
 # DELTARUNE-Battle-Engine
  The first public Game Maker Studio 2 DELTARUNE Battle Engine repository made by Animelici804.
- The engine is currently unfinished, so there will be some updates.
+ The engine is currently unfinished, so there will be some updates. If you want to help this engine grow, you can sent me pull requests and I could accept!
  
 ### The features I am planning to add;
 - Other Heroes Support (Kris and Ralsei)
