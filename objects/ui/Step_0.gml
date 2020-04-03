@@ -9,6 +9,11 @@ if(_tp_old!=TP){
 
 if (_phase==0) {
 	cooldown=false;
+	if (cooldown2==false) {
+		if (alarm[2] < 0) {
+			alarm[2] = 1;
+		}
+	}
 	if (!instance_exists(text_typer)) {
 		var _typer=instance_create_depth(30, 379, DEPTH_UI.TEXT, text_typer);
 		_typer._shadow=true;
@@ -17,6 +22,7 @@ if (_phase==0) {
 	_monster_glow=false;
 }
 else if (_phase==1) {
+	cooldown2=false;
 	if (cooldown==false) {
 		if (alarm[1] < 0) {
 			alarm[1] = 1;

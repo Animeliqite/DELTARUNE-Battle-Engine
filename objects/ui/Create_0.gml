@@ -10,14 +10,14 @@ _offset_y=255;
 
 _phase=-1;
 cooldown=false;
+cooldown2=false;
 alarm[0]=25;
 
 Battle_FindMonsterIndex();
 
 _monster_glow=false;
-_monster_glow_alpha=1.0;
-_uniColor = shader_get_uniform(shd_white_sprite, "u_color");
-_shader_color=[1.0, 1.0, 1.0, _monster_glow_alpha];
+_monster_glow_alpha=0;
+_monster_alpha_complete=false;
 
 GMU_Anim_New(self,"_offset_y",GMU_ANIM.CUBIC,GMU_ANIM.OUT,225,-225,25);
 GMU_Anim_New(self,"_tp_offset_x",GMU_ANIM.CUBIC,GMU_ANIM.OUT,-100,100,30);

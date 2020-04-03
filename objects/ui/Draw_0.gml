@@ -47,10 +47,17 @@ draw_text_transformed(offset_x+110+18+8+45-21,offset_y+21-13,string(global.hp),2
 draw_set_halign(fa_left);
 
 if (_monster_glow==true){
-	GMU_Anim_New(id,"_monster_glow_alpha",GMU_ANIM.LINEAR,GMU_ANIM.IN_OUT,true,1,30);
-	_shader_color=[1.0, 1.0, 1.0, 0.25];
-	shader_set(shd_white_sprite);
-	shader_set_uniform_f_array(shd_white_sprite, _shader_color);
-	draw_sprite(global.monster.sprite_index,global.monster.image_index,global.monster.x,global.monster.y);
-	shader_reset();
+	if (_monster_glow_alpha < 1) and (_monster_alpha_complete==false) {
+		_monster_glow_alpha+=0.025;
+	}
+	else {
+		_monster_alpha_complete=true;
+	}
+	if (_monster_glow_alpha > 0) and (_monster_alpha_complete==true) {
+		_monster_glow_alpha-=0.025;
+	}
+	else {
+		_monster_alpha_complete=false;
+	}
+	draw_sprite_ext(global.monster.glow_sprite_index,global.monster.image_index,global.monster.x,global.monster.y, 2, 2, 0, c_white, _monster_glow_alpha);
 }
